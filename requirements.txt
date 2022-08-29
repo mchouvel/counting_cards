@@ -9,6 +9,7 @@ numpy
 pandas
 scikit-learn
 tensorflow
+tensorflow-hub
 Pillow
 
 # tests/linter
