@@ -1,0 +1,260 @@
+item {
+    id: 1
+    display_name: "10C"
+}
+
+item {
+    id: 2
+    display_name: "10D"
+}
+
+item {
+    id: 3
+    display_name: "10H"
+}
+
+item {
+    id: 4
+    display_name: "10S"
+}
+
+item {
+    id: 5
+    display_name: "2C"
+}
+
+item {
+    id: 6
+    display_name: "2D"
+}
+
+item {
+    id: 7
+    display_name: "2H"
+}
+
+item {
+    id: 8
+    display_name: "2S"
+}
+
+item {
+    id: 9
+    display_name: "3C"
+}
+
+item {
+    id: 10
+    display_name: "3D"
+}
+
+item {
+    id: 11
+    display_name: "3H"
+}
+
+item {
+    id: 12
+    display_name: "3S"
+}
+
+item {
+    id: 13
+    display_name: "4C"
+}
+
+item {
+    id: 14
+    display_name: "4D"
+}
+
+item {
+    id: 15
+    display_name: "4H"
+}
+
+item {
+    id: 16
+    display_name: "4S"
+}
+
+item {
+    id: 17
+    display_name: "5C"
+}
+
+item {
+    id: 18
+    display_name: "5D"
+}
+
+item {
+    id: 19
+    display_name: "5H"
+}
+
+item {
+    id: 20
+    display_name: "5S"
+}
+
+item {
+    id: 21
+    display_name: "6C"
+}
+
+item {
+    id: 22
+    display_name: "6D"
+}
+
+item {
+    id: 23
+    display_name: "6H"
+}
+
+item {
+    id: 24
+    display_name: "6S"
+}
+
+item {
+    id: 25
+    display_name: "7C"
+}
+
+item {
+    id: 26
+    display_name: "7D"
+}
+
+item {
+    id: 27
+    display_name: "7H"
+}
+
+item {
+    id: 28
+    display_name: "7S"
+}
+
+item {
+    id: 29
+    display_name: "8C"
+}
+
+item {
+    id: 30
+    display_name: "8D"
+}
+
+item {
+    id: 31
+    display_name: "8H"
+}
+
+item {
+    id: 32
+    display_name: "8S"
+}
+
+item {
+    id: 33
+    display_name: "9C"
+}
+
+item {
+    id: 34
+    display_name: "9D"
+}
+
+item {
+    id: 35
+    display_name: "9H"
+}
+
+item {
+    id: 36
+    display_name: "9S"
+}
+
+item {
+    id: 37
+    display_name: "AC"
+}
+
+item {
+    id: 38
+    display_name: "AD"
+}
+
+item {
+    id: 39
+    display_name: "AH"
+}
+
+item {
+    id: 40
+    display_name: "AS"
+}
+
+item {
+    id: 41
+    display_name: "JC"
+}
+
+item {
+    id: 42
+    display_name: "JD"
+}
+
+item {
+    id: 43
+    display_name: "JH"
+}
+
+item {
+    id: 44
+    display_name: "JS"
+}
+
+item {
+    id: 45
+    display_name: "KC"
+}
+
+item {
+    id: 46
+    display_name: "KD"
+}
+
+item {
+    id: 47
+    display_name: "KH"
+}
+
+item {
+    id: 48
+    display_name: "KS"
+}
+
+item {
+    id: 49
+    display_name: "QC"
+}
+
+item {
+    id: 50
+    display_name: "QD"
+}
+
+item {
+    id: 51
+    display_name: "QH"
+}
+
+item {
+    id: 52
+    display_name: "QS"
+}
+
