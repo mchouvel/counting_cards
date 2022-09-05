@@ -8,3 +8,4 @@ raw_data/
 .env
 models/
 notebooks/martial/training_files/
+react/node_modules/

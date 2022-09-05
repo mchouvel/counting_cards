@@ -1,0 +1,66 @@
+body{
+    background-color: #35654d;
+    margin: 0;
+    font-family: Montserrat;
+}
+canvas{
+	margin-left: -600px;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+.columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+.col{
+	width: 50%;
+	display: inline-block;
+}
+.video_part{
+	text-align: center;
+}
+.infos_part{
+	margin: 4em;
+	height: 500px;
+}
+video#frame {
+    border: 10px solid white;
+    border-radius: 5px;
+}
+.header{
+	text-align: center;
+	padding: 2em 2em 0em 2em;
+}
+.header img{
+	height: 12em;
+}
+.cards{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 1em 1em; 
+}
+.cards img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+h2{
+	color: white;
+}
+button {
+    padding: 0.5em 2em;
+    margin-top: 2em;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1em;
+    margin-right: 1em
+}
