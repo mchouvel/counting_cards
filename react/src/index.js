@@ -5,7 +5,7 @@ import {loadGraphModel} from '@tensorflow/tfjs-converter';
 import "./styles.css";
 tf.setBackend('webgl');
 
-const threshold = 0.8;
+const threshold = 0.80;
 
 async function load_model() {
     // It's possible to load the model locally or from a repo
@@ -352,13 +352,20 @@ class App extends React.Component {
     ctx.textBaseline = "top";
 
     //Getting predictions
-    const boxes = predictions[5].arraySync();
-    const scores = predictions[3].arraySync();
-    const classes = predictions[1].dataSync();
+    //const boxes = predictions[5].arraySync();
+    //const scores = predictions[3].arraySync();
+    //const classes = predictions[1].dataSync();
+    //console.log(predictions)
+    const boxes = predictions[1].arraySync();
+    const scores = predictions[6].arraySync();
+    const classes = predictions[3].dataSync();
+    //console.log(scores)
+
     const detections = this.buildDetectedObjects(scores, threshold,
                                     boxes, classes, classesDir);
 
     detections.forEach(item => {
+      console.log(item["score"])
       const x = item['bbox'][0];
       const y = item['bbox'][1];
       const width = item['bbox'][2];
@@ -384,7 +391,7 @@ class App extends React.Component {
       ctx.fillStyle = "#000000";
       ctx.fillText(item["label"] + " " + (100*item["score"]).toFixed(2) + "%", x, y);
 
-    if(item['score']>=0.90 && this.state.PlayedCards.includes(item["label"])===false) {
+    if(item['score']>=0.93 && this.state.PlayedCards.includes(item["label"])===false) {
       this.setState({ 
         PlayedCards: this.state.PlayedCards.concat([item["label"]]),
         Count: Number(this.state.Count) + Number(item["value"])
@@ -403,22 +410,22 @@ class App extends React.Component {
         <div className="columns">
           <div className="col video_part">
             <video
-              style={{height: '500px', width: "600px"}}
+              style={{height: '450px', width: "600px"}}
               className="size"
               autoPlay
               playsInline
               muted
               ref={this.videoRef}
               width="600"
-              height="500"
+              height="450"
               id="frame"
             />
             <canvas
-              style={{height: '500px', width: "600px"}}
+              style={{height: '450px', width: "600px"}}
               className="size"
               ref={this.canvasRef}
               width="600"
-              height="500"
+              height="450"
             />
           </div>
           <div className="col infos_part">

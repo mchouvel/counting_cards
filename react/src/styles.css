@@ -1,16 +1,21 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body {
     background-color: #35654d;
     margin: 0;
     font-family: Montserrat;
 }
-canvas{
-	margin-left: -600px;
+canvas {
+    margin-left: -620px;
+    border: 10px solid white;
+    border-radius: 5px;
 }
 .all {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100vh;
+    height: 100vh; 
+    /*padding: 2em 0 4em;*/
 }
 .columns {
     display: flex;
@@ -18,40 +23,42 @@ canvas{
     align-items: center;
     flex: 1;
 }
-.col{
-	width: 50%;
-	display: inline-block;
+.col {
+    margin: 0 2em;
 }
-.video_part{
-	text-align: center;
+.video_part {
+    text-align: center;
+    position: relative;
 }
-.infos_part{
-	margin: 4em;
-	height: 500px;
+.infos_part {
+    /* margin: 4em; */
+    height: 500px;
 }
 video#frame {
     border: 10px solid white;
-    border-radius: 5px;
+    border-radius: 15px;
 }
-.header{
-	text-align: center;
-	padding: 2em 2em 0em 2em;
+.header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-top: 2em;
 }
-.header img{
-	height: 12em;
+.header img {
+    height: 12em;
 }
-.cards{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 1em 1em; 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em 1em;
 }
-.cards img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
-h2{
-	color: white;
+h2 {
+    color: white;
 }
 button {
     padding: 0.5em 2em;
@@ -62,5 +69,38 @@ button {
     font-family: Montserrat;
     font-weight: 500;
     font-size: 1em;
-    margin-right: 1em
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+@media (min-width: 1201px) {
+    .col{
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .infos_part {
+        width: calc(100% - 4em);
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    video#frame,
+    canvas {
+        width: calc(100% - 20px) !important;
+        height: auto !important;
+    }
+
+    canvas {
+        margin-left: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
